@@ -35,7 +35,7 @@
         <version.maven.jar>3.0.2</version.maven.jar>
         <version.maven.dependency>2.10</version.maven.dependency>
 
-        <version.sinno.common>1.0.0</version.sinno.common>
+        <version.commons.lang3>3.6</version.commons.lang3>
 
         <!--other deps-->
         <version.junit>4.12</version.junit>

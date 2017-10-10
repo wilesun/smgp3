@@ -53,7 +53,7 @@ public class SmgpSpTest {
         System.out.println("........send submit...");
         // send..
 
-        SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder().spId(spId).srcTermId(spSrcTermId)
+        SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder(1).spId(spId).srcTermId(spSrcTermId)
                 .mobile(mobile).msgContent(msg).build();
 
 //        smgpSp.sendSubmit(smgpSubmit);
@@ -118,7 +118,7 @@ public class SmgpSpTest {
         // send..
 
 
-        SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder().spId(spId).srcTermId(spSrcTermId)
+        SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder(1).spId(spId).srcTermId(spSrcTermId)
                 .mobile(mobile).msgContent(msg).build();
 
         smgpSp.sendSubmit(smgpSubmit);
@@ -169,7 +169,7 @@ public class SmgpSpTest {
         List<String> msg = LongMsgContentSplitUtil.split(longMsg);
 
         for (int i = 1; i <= msg.size(); i++) {
-            SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder().spId(spId).srcTermId(spSrcTermId)
+            SmgpSubmit smgpSubmit = SmgpSubmitFactory.builder(1).spId(spId).srcTermId(spSrcTermId)
                     .mobile(mobile).msgContent(msg.get(i - 1)).build();
 
             TpUdhiMessage tpUdhiMessage = new TpUdhiMessage();

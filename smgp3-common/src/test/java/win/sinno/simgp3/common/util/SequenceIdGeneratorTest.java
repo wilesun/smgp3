@@ -16,7 +16,7 @@ public class SequenceIdGeneratorTest {
             @Override
             public void run() {
                 for (int i = 0; i < 1000; i++) {
-                    System.out.println("i1 : " + SequenceIdGenerator.nextSeqId());
+                    System.out.println("i1 : " + SequenceIdGenerator.getInstance("test").nextSeqId());
                 }
             }
         }.start();
@@ -25,7 +25,7 @@ public class SequenceIdGeneratorTest {
             @Override
             public void run() {
                 for (int i = 0; i < 1000; i++) {
-                    System.out.println("i2 : " + SequenceIdGenerator.nextSeqId());
+                    System.out.println("i2 : " + SequenceIdGenerator.getInstance("test").nextSeqId());
                 }
             }
         }.start();

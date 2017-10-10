@@ -1,6 +1,6 @@
 package win.sinno.smgp3.communication.factory;
 
-import win.sinno.common.util.DateUtil;
+import win.sinno.smgp3.common.util.DateUtil;
 import win.sinno.smgp3.protocol.body.SmgpLoginBody;
 import win.sinno.smgp3.protocol.constant.SmgpConfigs;
 import win.sinno.smgp3.protocol.constant.SmgpLoginModeEnum;

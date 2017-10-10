@@ -35,11 +35,11 @@
         </dependency>
 
         <dependency>
-            <groupId>win.sinno</groupId>
-            <artifactId>sinno-common</artifactId>
-            <version>${version.sinno.common}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
         </dependency>
-
     </dependencies>
 
 </project>
